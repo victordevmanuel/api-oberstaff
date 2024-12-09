@@ -13,6 +13,14 @@ return [
     |
     */
 
+    'disks' => [
+    'local' => [
+        'driver' => 'local',
+        'root' => env('FILESYSTEM_ROOT', storage_path('app')),
+    ],
+    // otros discos...
+],
+
     'default' => env('FILESYSTEM_DISK', 'local'),
 
     /*

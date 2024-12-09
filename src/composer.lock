@@ -6133,7 +6133,7 @@
                 },
                 "laravel": {
                     "providers": [
-                        "Laravel\\Pail\\PailServiceProvider"
+                    
                     ]
                 }
             },

@@ -117,6 +117,10 @@ return [
     | Supported drivers: "file", "cache"
     |
     */
+    'providers' => [
+    // Otros proveedores...
+    // 'Laravel\Pail\PailServiceProvider', // Asegúrate de que esta línea no exista
+],
 
     'maintenance' => [
         'driver' => env('APP_MAINTENANCE_DRIVER', 'file'),

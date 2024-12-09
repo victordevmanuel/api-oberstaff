@@ -1,9 +1,11 @@
 {
     "version": 2,
+
     "builds": [
         { "src": "/api/index.php", "use": "vercel-php@0.6.0" },
         { "src": "/public/**", "use": "@vercel/static" }
     ],
+
     "routes": [
         {
             "src": "/(css|js)/(.*)",
@@ -14,6 +16,7 @@
             "dest": "/api/index.php"
         }
     ],
+
     "env": {
         "APP_NAME": "Vercel Laravel",
         "APP_ENV": "production",
@@ -27,12 +30,11 @@
         "APP_SERVICES_CACHE": "/tmp/services.php",
         "CACHE_DRIVER": "array",
         "LOG_CHANNEL": "stderr",
-        "SESSION_DRIVER": "file",
-        "SESSION_LIFETIME": "120",
+        "SESSION_DRIVER": "array",
         "VIEW_COMPILED_PATH": "/tmp/views",
-        "FILESYSTEM_DRIVER": "local",
-        "FILESYSTEM_DISK": "local",
-        "FILESYSTEM_ROOT": "/tmp",
-        "LOG_PATH": "/tmp/logs/laravel.log"
+        "SSR_TEMP_PATH": "/tmp/ssr",
+        "NODE_PATH": "node"
     }
 }
+
+

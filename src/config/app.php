@@ -12,10 +12,7 @@ return [
     | other UI elements where an application name needs to be displayed.
     |
     */
-    'providers' => [
-    // Otros proveedores...
-    // 'Laravel\Pail\PailServiceProvider', // Asegúrate de que esta línea no exista
-],
+    
 
     'name' => env('APP_NAME', 'Laravel'),
 
